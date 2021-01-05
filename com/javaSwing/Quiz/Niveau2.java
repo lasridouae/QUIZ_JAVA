@@ -1,6 +1,6 @@
 import javax.swing.JFrame;
 
-public class Quiz3 {
+public class Niveau2 {
     public static void main(String[] args) throws InterruptedException {
         
       JFrame window = new JFrame ("Quiz Game") ;  
@@ -19,12 +19,12 @@ public class Quiz3 {
       welcome.choose(time);
         
       quiz2[] qObj1 = {
-            new quiz2("Après la compilation, un programme écrit en JAVA, il se transforme en programme en bytecode Quelle est l’extension du programme en bytecode ?","aucun des choix ",".JAVA ",".Class",".JAVA"),
-            new quiz2("Class Test{ Public Test () { System.out.println(”Bonjour”);} public Test (int i) {this();"
-            		+ "System.out.println(”Nous sommes en ”+i+ ” !”);}; qu’affichera l’instruction suivante? Test t1=new Test (2018); ","aucun des choix","Bonjour Nous sommes en 2018 !","Nous sommes en 2018 !","Nous sommes en 2018 !"),
-            new quiz2("Voici un constructeur de la classe Employee, y-at'il un problème ? Public void Employe(String n){ Nom=n;","vrai","faux ","","commence par une majuscule "),
-            new quiz2("Pour spécifier que la variable ne pourra plus être modifiée et doit être initialisée dès sa déclaration,on la déclare comme une constante avec le mot réservé","aucun des choix","final","const","const"),
-            new quiz2("Dans une classe, on accède à ses variables grâce au mot clé","aucun des choix","this","super","this")
+            new quiz2("Aprï¿½s la compilation, un programme ï¿½crit en JAVA, il se transforme en programme en bytecode Quelle est lï¿½extension du programme en bytecode ?","aucun des choix ",".JAVA ",".Class",".JAVA"),
+            new quiz2("Class Test{ Public Test () { System.out.println(ï¿½Bonjourï¿½);} public Test (int i) {this();"
+            		+ "System.out.println(ï¿½Nous sommes en ï¿½+i+ ï¿½ !ï¿½);}; quï¿½affichera lï¿½instruction suivante? Test t1=new Test (2018); ","aucun des choix","Bonjour Nous sommes en 2018 !","Nous sommes en 2018 !","Nous sommes en 2018 !"),
+            new quiz2("Voici un constructeur de la classe Employee, y-at'il un problï¿½me ? Public void Employe(String n){ Nom=n;","vrai","faux ","","commence par une majuscule "),
+            new quiz2("Pour spï¿½cifier que la variable ne pourra plus ï¿½tre modifiï¿½e et doit ï¿½tre initialisï¿½e dï¿½s sa dï¿½claration,on la dï¿½clare comme une constante avec le mot rï¿½servï¿½","aucun des choix","final","const","const"),
+            new quiz2("Dans une classe, on accï¿½de ï¿½ ses variables grï¿½ce au mot clï¿½","aucun des choix","this","super","this")
         };
         
         while (nbr != qObj1.length && s<time ) {

@@ -1,7 +1,7 @@
-class counter {
+class Counter {
 int M,S,Ms;
 
-    counter() {
+    Counter() {
        M=0;S=0;Ms=0; 
     }
 }

@@ -17,12 +17,12 @@ public class FinalQuiz{
         
     
         
-      quiz2 [] qObj = {
-            new quiz2("calculerSalaire(int) calculerSalaire(int, double)La méthode calculerSalaire est :","aucun des choix ","surchargée","redéfinie",".JAVA"),
-            new quiz2("Une classe qui contient au moins une méthode abstraite doit être déclarée abstraite.","faux","vrai","","vrai"),
-            new quiz2("Est-ce qu’une classe peut implémenter plusieurs interfaces ?","vrai","faux ","","faux "),
-            new quiz2("La déclaration d'une méthode suivante : public void traitement() throws IOException précise que la méthode propage une exception contrôlée","vrai","faux","",""),
-            new quiz2("class Test{\r\n"
+      Quiz2 [] qObj = {
+            new Quiz2("calculerSalaire(int) calculerSalaire(int, double)La méthode calculerSalaire est :","aucun des choix ","surchargée","redéfinie",".JAVA"),
+            new Quiz2("Une classe qui contient au moins une méthode abstraite doit être déclarée abstraite.","faux","vrai","","vrai"),
+            new Quiz2("Est-ce qu’une classe peut implémenter plusieurs interfaces ?","vrai","faux ","","faux "),
+            new Quiz2("La déclaration d'une méthode suivante : public void traitement() throws IOException précise que la méthode propage une exception contrôlée","vrai","faux","",""),
+            new Quiz2("class Test{\r\n"
             		+ "public static void main (String[] args) {\r\n"
             		+ "try {\r\n"
             		+ "int a =10;\r\n"
@@ -47,8 +47,8 @@ public class FinalQuiz{
         }
         
         int nbrQ = qObj.length ;  
-        scorePane scorePane = new scorePane (window,score,nbrQ) ;
-        scorePane.choose();
+        ScorePanel ScorePanel = new ScorePanel (window,score,nbrQ) ;
+        ScorePanel.choose();
      
      }   
     

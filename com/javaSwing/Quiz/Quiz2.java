@@ -1,10 +1,4 @@
-import java.awt.event.ActionEvent;
-import javax.swing.*;
-import java.awt.* ;
-import javax.swing.border.LineBorder;
-import javax.swing.border.SoftBevelBorder;
-
-class quiz2 {
+class Quiz2 {
     
     String question ,
             op1 ,
@@ -13,7 +7,7 @@ class quiz2 {
             correct_answer ;
            
     
-    quiz2 (String question , String op1 , String op2 ,String op3, String corrAns ) {
+    Quiz2 (String question , String op1 , String op2 ,String op3, String corrAns ) {
         this.question = question ;
         this.op1 = op1;
         this.op2 = op2;

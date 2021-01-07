@@ -1,10 +1,13 @@
-import java.awt.event.ActionEvent;
-import javax.swing.*;
-import java.awt.* ;
-import javax.swing.border.LineBorder;
-import javax.swing.border.SoftBevelBorder;
+import java.awt.Color;
+import java.awt.Font;
 
-class scorePane extends JPanel {
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.LineBorder;
+
+class ScorePanel extends JPanel {
     
     JButton exit ;
     
@@ -12,7 +15,7 @@ class scorePane extends JPanel {
     
     static boolean again =false;
     
-    scorePane (JFrame window , int score , int nbrQ) {
+    ScorePanel (JFrame window , int score , int nbrQ) {
         
         setSize(window.getSize().width,window.getSize().height);
         setLayout(null);
@@ -20,7 +23,7 @@ class scorePane extends JPanel {
         window.setContentPane(this);
         
      
-        scoreLabel = new JLabel ("You Got : "+score+"%");
+        scoreLabel = new JLabel ("You Got : "+(score+nbrQ)+"%");
         scoreLabel.setHorizontalAlignment(JLabel.CENTER);
         scoreLabel.setFont(new Font("Verdana", Font.BOLD, 40));
         scoreLabel.setForeground(Color.white);

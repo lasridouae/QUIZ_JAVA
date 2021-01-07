@@ -24,9 +24,9 @@ class Questions extends JPanel {
     static int wrongs=0;
     
     static JLabel timer = new JLabel ("00 : 00 : 000") ;
-    static counter count = new counter ();
+    static Counter count = new Counter ();
     
-    Questions (quiz2 obj , JFrame window) {        
+    Questions (Quiz2 obj , JFrame window) {        
       Q = new JLabel (obj.question);
       Q.setFont(new Font("Tahoma", Font.BOLD, 11));
       Q.setBackground(Color.PINK);
@@ -132,7 +132,7 @@ class Questions extends JPanel {
     
     int getScore() {return score ;}
     
-    counter getTime () {return count ;}
+    Counter getTime () {return count ;}
     
     void Reset () {
         

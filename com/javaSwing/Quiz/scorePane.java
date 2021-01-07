@@ -6,8 +6,7 @@ import javax.swing.border.SoftBevelBorder;
 
 class scorePane extends JPanel {
     
-    JButton //secLevel , 
-    exit ;
+    JButton exit ;
     
     JLabel scoreLabel ;
     
@@ -20,17 +19,8 @@ class scorePane extends JPanel {
         setBackground(Color.DARK_GRAY);
         window.setContentPane(this);
         
-      /*  secLevel = new JButton ("niveau 2");
-        secLevel.setBackground(new Color(255,255,255)) ;
-        secLevel.setBounds(300,250,200,50);
-        add(secLevel);
-        
-        exit = new JButton ("Exit");
-        exit.setBackground(new Color(255,255,255)) ;
-        exit.setBounds(300,350,200,50);
-        add(exit);
-        */
-        scoreLabel = new JLabel ("You Got : "+((score+nbrQ)/score*100)+"%");
+     
+        scoreLabel = new JLabel ("You Got : "+score+"%");
         scoreLabel.setHorizontalAlignment(JLabel.CENTER);
         scoreLabel.setFont(new Font("Verdana", Font.BOLD, 40));
         scoreLabel.setForeground(Color.white);
@@ -43,23 +33,15 @@ class scorePane extends JPanel {
     }
     
     void choose () {
+    	
+    	new Niveau2();
+  
+       // exit.addActionListener((ActionEvent e) -> {
+         //   System.exit(0);
+               
+       // });
         
-    	/*secLevel.addActionListener((ActionEvent e) -> {
-            again= true ;
-        });
-        */
-        exit.addActionListener((ActionEvent e) -> {
-            System.exit(0);
-        });
-        
-      /*  while (!again) {
-            try {        
-                Thread.sleep(0);
-            } catch (InterruptedException ex) {}
-        }
-        
-        again = false ;
-        */
+    
     }
     
 }

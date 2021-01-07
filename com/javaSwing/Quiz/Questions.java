@@ -1,10 +1,15 @@
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
-import javax.swing.*;
-import java.awt.* ;
-import javax.swing.border.LineBorder;
+
+import javax.swing.BorderFactory;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
 import javax.swing.border.SoftBevelBorder;
 
-class questions extends JPanel {
+class Questions extends JPanel {
     
     JLabel Q ;
     
@@ -21,7 +26,7 @@ class questions extends JPanel {
     static JLabel timer = new JLabel ("00 : 00 : 000") ;
     static counter count = new counter ();
     
-    questions (quiz2 obj , JFrame window) {        
+    Questions (quiz2 obj , JFrame window) {        
       Q = new JLabel (obj.question);
       Q.setFont(new Font("Tahoma", Font.BOLD, 11));
       Q.setBackground(Color.PINK);
@@ -71,17 +76,26 @@ class questions extends JPanel {
     void getAnswer (int time) throws InterruptedException {
     	
             option1.addActionListener((ActionEvent e) -> {
-                if (option1.getText().equals(correct_answer)) score++ ;  
+                if (option1.getText().equals(correct_answer)) {
+                	score+=20 ;  
+                	System.out.println("score"+score);
+                }
                 next = true ;
             });
 
             option2.addActionListener((ActionEvent e) -> {
-                if (option2.getText().equals(correct_answer)) score++ ;  
+                if (option2.getText().equals(correct_answer)) {
+                	score +=20 ;  
+                	System.out.println("score"+score);
+                }
                 next = true ;
             });
 
             option3.addActionListener((ActionEvent e) -> {
-                if (option3.getText().equals(correct_answer)) score++ ;  
+                if (option3.getText().equals(correct_answer)) {
+                	score +=20 ; 
+                	System.out.println("score"+score);
+                }
                 next = true ;
             });
 

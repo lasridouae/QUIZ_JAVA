@@ -15,10 +15,9 @@ public class FinalQuiz{
       int time = 300;
      //sec  
         
-      welcomePage welcome = new welcomePage (window);
-      welcome.choose(time);
+    
         
-      quiz2 [] qObj1 = {
+      quiz2 [] qObj = {
             new quiz2("calculerSalaire(int) calculerSalaire(int, double)La méthode calculerSalaire est :","aucun des choix ","surchargée","redéfinie",".JAVA"),
             new quiz2("Une classe qui contient au moins une méthode abstraite doit être déclarée abstraite.","faux","vrai","","vrai"),
             new quiz2("Est-ce qu’une classe peut implémenter plusieurs interfaces ?","vrai","faux ","","faux "),
@@ -36,17 +35,18 @@ public class FinalQuiz{
             		+ "{System.out.println (\"je suis à l’intérieur de finally\");}}","aucun des choix","a=10 ; b=0 Je suis à l’intérieur de finally","a=10 ;b=0 diviser par 0! je suis à l’intérieur de finally","")
         };
         
-        while (nbr != qObj1.length && s<time ) {
-            questions N2 = new questions(qObj1[nbr], window);
-            N2.getAnswer(time); 
-            m = N2.getTime().M ;
-            s = N2.getTime().S ;
-            score = N2.getScore();
-            if (nbr == qObj1.length-1 || (s==time)) N2.Reset();
+        while (nbr != qObj.length && s<time ) {
+            Questions quiz = new Questions(qObj[nbr], window);
+            quiz.getAnswer(time); 
+            m = quiz.getTime().M ;
+            s = quiz.getTime().S ;
+            score = quiz.getScore();
+           if (nbr == qObj.length-1 || (s==time)) quiz.Reset();
+            
             nbr++ ;
         }
         
-        int nbrQ = qObj1.length ;  
+        int nbrQ = qObj.length ;  
         scorePane scorePane = new scorePane (window,score,nbrQ) ;
         scorePane.choose();
      

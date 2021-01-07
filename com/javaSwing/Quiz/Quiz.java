@@ -1,8 +1,4 @@
-import java.awt.event.ActionEvent;
-import javax.swing.*;
-import java.awt.* ;
-import javax.swing.border.LineBorder;
-import javax.swing.border.SoftBevelBorder;
+import javax.swing.JFrame;
 
 public class Quiz {
     public static void main(String[] args) throws InterruptedException {
@@ -31,21 +27,23 @@ public class Quiz {
         };
         
         while (nbr != qObj.length && s<time ) {
-            questions quiz = new questions(qObj[nbr], window);
+            Questions quiz = new Questions(qObj[nbr], window);
             quiz.getAnswer(time); 
             m = quiz.getTime().M ;
             s = quiz.getTime().S ;
             score = quiz.getScore();
-            if (nbr == qObj.length-1 || (s==time)) quiz.Reset();
+           if (nbr == qObj.length-1 || (s==time)) quiz.Reset();
+            
             nbr++ ;
         }
         
         int nbrQ = qObj.length ;  
         scorePane scorePane = new scorePane (window,score,nbrQ) ;
-        scorePane.choose();
+   
+        
+      new Niveau2();
+        
+     }
      
-     }   
-    
-      
     }    
 }

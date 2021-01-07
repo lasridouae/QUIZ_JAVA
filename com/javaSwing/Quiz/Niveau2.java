@@ -1,7 +1,8 @@
 import javax.swing.JFrame;
 
 public class Niveau2 {
-    public static void main(String[] args) throws InterruptedException {
+	//public static void Niveau2() {
+   public static void main(String[] args) throws InterruptedException {
         
       JFrame window = new JFrame ("Quiz Game") ;  
       window.setSize(800,600);
@@ -15,10 +16,9 @@ public class Niveau2 {
       int time = 300;
      //sec  
         
-      welcomePage welcome = new welcomePage (window);
-      welcome.choose(time);
+      
         
-      quiz2[] qObj1 = {
+      quiz2[] qObj = {
             new quiz2("Apr�s la compilation, un programme �crit en JAVA, il se transforme en programme en bytecode Quelle est l�extension du programme en bytecode ?","aucun des choix ",".JAVA ",".Class",".JAVA"),
             new quiz2("Class Test{ Public Test () { System.out.println(�Bonjour�);} public Test (int i) {this();"
             		+ "System.out.println(�Nous sommes en �+i+ � !�);}; qu�affichera l�instruction suivante? Test t1=new Test (2018); ","aucun des choix","Bonjour Nous sommes en 2018 !","Nous sommes en 2018 !","Nous sommes en 2018 !"),
@@ -27,22 +27,21 @@ public class Niveau2 {
             new quiz2("Dans une classe, on acc�de � ses variables gr�ce au mot cl�","aucun des choix","this","super","this")
         };
         
-        while (nbr != qObj1.length && s<time ) {
-            questions N2 = new questions(qObj1[nbr], window);
-            N2.getAnswer(time); 
-            m = N2.getTime().M ;
-            s = N2.getTime().S ;
-            score = N2.getScore();
-            if (nbr == qObj1.length-1 || (s==time)) N2.Reset();
+        while (nbr != qObj.length && s<time ) {
+            Questions quiz = new Questions(qObj[nbr], window);
+            quiz.getAnswer(time); 
+            m = quiz.getTime().M ;
+            s = quiz.getTime().S ;
+            score = quiz.getScore();
+            if (nbr == qObj.length-1 || (s==time)) quiz.Reset();
             nbr++ ;
         }
         
-        int nbrQ = qObj1.length ;  
+        int nbrQ = qObj.length ;  
         scorePane scorePane = new scorePane (window,score,nbrQ) ;
-        scorePane.choose();
+      
      
      }   
     
-      
+    } 
     }    
-}

@@ -49,11 +49,11 @@ class Questions extends JPanel {
       
       add(Q); add(option1); add(option2); add(option3);
       
-      Q.setBounds(43,11,400,50);
+      Q.setBounds(43,15,400,50);
       Q.setHorizontalAlignment(JLabel.CENTER);
-      option1.setBounds(23,92,200,40); option1.setBackground(new Color(255,255,255)) ; 
-      option2.setBounds(23,183,200,40); option2.setBackground(new Color(255,255,255)) ;
-      option3.setBounds(23,274,200,40);  option3.setBackground(new Color(255,255,255)) ;
+      option1.setBounds(23,92,249,40); option1.setBackground(Color.PINK) ; 
+      option2.setBounds(23,183,249,40); option2.setBackground(Color.PINK) ;
+      option3.setBounds(23,274,200,40);  option3.setBackground(Color.PINK) ;
       option1.setBorder(new SoftBevelBorder(SoftBevelBorder.RAISED)); 
       option2.setBorder(new SoftBevelBorder(SoftBevelBorder.RAISED));
       option3.setBorder(new SoftBevelBorder(SoftBevelBorder.RAISED));
@@ -62,8 +62,8 @@ class Questions extends JPanel {
       timer.setBounds(124,11,300,50);
       timer.setFont(new Font("Verdana", Font.BOLD, 40));
       timer.setHorizontalAlignment(JLabel.CENTER);
-      timer.setBorder(BorderFactory.createLineBorder(Color.white));
-      timer.setForeground(Color.white);
+      timer.setBorder(BorderFactory.createLineBorder(Color.PINK));
+      timer.setForeground(Color.PINK);
       pan.add(timer);
       
       

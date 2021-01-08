@@ -22,8 +22,9 @@ public class Quiz {
             new Quiz2("JAVA est un langage","Compilé ","Interprété","Compilé et interpreté","Compilé et interpreté"),
             new Quiz2("Toutes les classes héritent de la classe ","Main ","object","AWT","AWT"),
             new Quiz2("Par convention une classe  ","est en minuscule","commence par une majuscule ","est en majuscules","commence par une majuscule "),
-            new Quiz2("Est-ce que on peut avoir plusieurs constructeurs pour la même classe ","oui","non","","oui"),
-            new Quiz2("Dans la ligne public class A implements B, B est :","Interface","Classe parent","Package","Interfacce")
+            new Quiz2("Est-ce que on peut avoir plusieurs constructeurs pour la même classe ","oui","non","aucun des choix ","oui"),
+            new Quiz2("Dans la ligne public class A implements B, B est :","Interface","Classe parent","Package","Interfacce"),
+            new Quiz2("Java est un langage d´evelopp´e par, B est :","Hewlett-Packard","Sun Microsystems","Oracle","Sun Microsystems")
         };
         
         while (nbr != qObj.length && s<time ) {
@@ -39,9 +40,10 @@ public class Quiz {
         
         int nbrQ = qObj.length ;  
         ScorePanel ScorePanel = new ScorePanel (window,score,nbrQ) ;
-   
+        
         
       new Niveau2();
+     // ScorePanel.choose();
         
      }
      

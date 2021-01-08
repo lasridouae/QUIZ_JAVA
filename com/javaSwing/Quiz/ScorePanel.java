@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -9,7 +10,8 @@ import javax.swing.border.LineBorder;
 
 class ScorePanel extends JPanel {
     
-    JButton exit ;
+    JButton 
+    exit ;
     
     JLabel scoreLabel ;
     
@@ -23,7 +25,7 @@ class ScorePanel extends JPanel {
         window.setContentPane(this);
         
      
-        scoreLabel = new JLabel ("You Got : "+(score+nbrQ)+"%");
+        scoreLabel = new JLabel ("You Got : "+score+"%");
         scoreLabel.setHorizontalAlignment(JLabel.CENTER);
         scoreLabel.setFont(new Font("Verdana", Font.BOLD, 40));
         scoreLabel.setForeground(Color.white);
@@ -39,10 +41,10 @@ class ScorePanel extends JPanel {
     	
     	new Niveau2();
   
-       // exit.addActionListener((ActionEvent e) -> {
-         //   System.exit(0);
+       exit.addActionListener((ActionEvent e) -> {
+          System.exit(0);
                
-       // });
+      });
         
     
     }

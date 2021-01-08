@@ -48,6 +48,7 @@ public class FinalQuiz{
         
         int nbrQ = qObj.length ;  
         ScorePanel ScorePanel = new ScorePanel (window,score,nbrQ) ;
+        
         ScorePanel.choose();
      
      }   

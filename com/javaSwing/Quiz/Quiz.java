@@ -43,7 +43,7 @@ public class Quiz {
         
         
       new Niveau2();
-     // ScorePanel.choose();
+      ScorePanel.choose();
         
      }
      
